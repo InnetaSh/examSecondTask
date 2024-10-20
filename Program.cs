@@ -226,36 +226,6 @@ class Program
 }
 
 
-//static async Task StartMonitoring()
-//{
-//    var cts = new CancellationTokenSource();
-//    var monitoringTask = Task.Run(() => Monitor(cts.Token));
-
-//    Console.WriteLine("Нажмите Enter для остановки мониторинга...");
-//    Console.ReadLine();
-//    cts.Cancel();
-//    await monitoringTask;
-//}
-
-//static async Task Monitor(CancellationToken cancellationToken)
-//{
-//    if (settings.EnableKeyLogging)
-//    {
-//        keyLogger.StartLogging(settings.ReportPath, cancellationToken);
-//    }
-
-//    if (settings.EnableProcessMonitoring)
-//    {
-//        processWatcher.StartMonitoring(settings.ReportPath, cancellationToken);
-//    }
-
-
-//    while (!cancellationToken.IsCancellationRequested)
-//    {
-//        await Task.Delay(1000);
-//    }
-//}
-
 
 
 
